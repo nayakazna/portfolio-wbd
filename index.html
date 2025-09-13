@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayaka's Portfolio</title>
+    <style> @import url("styles.css"); </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">Nayaka's Portfolio</a>
+            <nav class="nav-menu">
+                <a href="#about" aria-label="About Me">About Me</a>
+                <a href="#skills" aria-label="My skills">Skills</a>
+                <a href="#projects" aria-label="My projects">Projects</a>
+                <a href="#contact" aria-label="Contact me">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="section">
+            <div class="container hero">
+                <img src="https://placehold.co/150x150/27272a/a1a1aa?text=Anda" alt="Foto Profil" class="profile-image">
+                <h1>Hi, I'm <br><span>Nayaka</span></h1>
+                <p>I'm a versatile software developer with a passion for creating beautiful and functional digital experiences.</p>
+                <a href="#projects" class="cta-button">See Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="card">
+                    <p class="card-text">
+                        I'm a (self-proclaimed) hard-working computer science (or informatics engineering, so they say) student from Bandung Institute of Technology eager to explore various branches of computer science to satisfy my personal curiosity. As a versatile, passionate developer, my skills span from UI/UX and web development to embedded systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill-badge">HTML5</span>
+                    <span class="skill-badge">CSS3</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">UI/UX Design</span>
+                    <span class="skill-badge">Git & GitHub</span>
+                    <span class="skill-badge">Desain Responsif</span>
+                    <span class="skill-badge">SEO</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3 class="card-title">Judol Detector</h3>
+                        <p class="card-text"> A YouTube scraper web app built with Svelte, designed to find online gambling promotion comments.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">IRK Library</h3>
+                        <p class="card-text">A mobile app for a matrix calculator, cryptographic algorithms, Huffman encoding visualizer, and material resource management.</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">GCS</h3>
+                        <p class="card-text">A ground control station for drones.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="card">
+                    <p class="card-text">
+                        Contact me at: <a href="mailto:dev@nayaka.tech">dev@nayaka.tech</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Z. Nayaka Athadiansyah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
