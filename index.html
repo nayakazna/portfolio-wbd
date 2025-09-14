@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nayaka's Portfolio</title>
-    <style> @import url("styles.css"); </style>
+    <title>Nayaka's Portfolio - Software Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        @import url("styles.css");
+        </style>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container nav-container">
-            <a href="#hero" class="logo">Nayaka's Portfolio</a>
+            <a href="#hero" class="logo"></a>
             <nav class="nav-menu">
-                <a href="#about" aria-label="About Me">About Me</a>
+                <a href="#about" aria-label="About Me">About</a>
                 <a href="#skills" aria-label="My skills">Skills</a>
                 <a href="#projects" aria-label="My projects">Projects</a>
                 <a href="#contact" aria-label="Contact me">Contact</a>
@@ -20,56 +23,154 @@
     </header>
 
     <main>
-        <section id="hero" class="section">
-            <div class="container hero">
-                <img src="foto.png" alt="Foto Profil" class="profile-image">
-                <h1>Hi, I'm <br><span>Nayaka</span></h1>
-                <p>I'm a versatile software developer with a passion for creating beautiful and functional digital experiences.</p>
-                <a href="#projects" class="cta-button">See Projects</a>
+        <section id="hero" class="section hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <br><span class="highlight">Nayaka</span></h1>
+                <p class="subtitle">
+                    A passionate <span class="typing-text">software developer</span> with versatile skills and a focus on innovation and user-centric design.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-button primary">View My Work</a>
+                    <a href="#contact" class="cta-button secondary">Get In Touch</a>
+                </div>
             </div>
         </section>
 
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
-                <div class="card">
-                    <p class="card-text">
-                        I'm a (self-proclaimed) hard-working computer science (or informatics engineering, so they say) student from Bandung Institute of Technology eager to explore various branches of computer science to satisfy my personal curiosity. As a versatile, passionate developer, my skills span from UI/UX and web development to embedded systems.
-                    </p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a (self-proclaimed) hard-working computer science (or informatics engineering, so they say) student from Bandung Institute of Technology eager to explore various branches of computer science to satisfy my personal curiosity. As a versatile, passionate developer, my skills span from UI/UX and web development to embedded systems.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         
         <section id="skills" class="section">
             <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-grid">
-                    <span class="skill-badge">HTML5</span>
-                    <span class="skill-badge">CSS3</span>
-                    <span class="skill-badge">JavaScript</span>
-                    <span class="skill-badge">UI/UX Design</span>
-                    <span class="skill-badge">Git & GitHub</span>
-                    <span class="skill-badge">Desain Responsif</span>
-                    <span class="skill-badge">SEO</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <h3 class="subsection-title">Web Development</h3>
+                <div class="skills-container">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-name">Svelte</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">React</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">Tailwind CSS</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">Go</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">MongoDB</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">PostgreSQL</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Mobile Development</h3>
+                <div class="skills-container">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-name">Kotlin</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">Android Studi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Robotics and Embedded Systems</h3>
+                <div class="skills-container">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-name">Arduino</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">C++</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">Python</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">ROS</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">OpenCV</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="subsection-title">Miscellaneous</h3>
+                <div class="skills-container">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-name">Docker</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-name">LaTeX</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="card-grid">
-                    <article class="card">
-                        <h3 class="card-title">Judol Detector</h3>
-                        <p class="card-text"> A YouTube scraper web app built with Svelte, designed to find online gambling promotion comments.</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">1</div>
+                            <h3 class="project-title">Judol Detector</h3>
+                        </div>
+                        <p class="project-description">
+                            An advanced YouTube scraper web application built with Svelte, designed to detect and flag online gambling promotion comments.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Svelte</span>
+                        </div>
                     </article>
-                    <article class="card">
-                        <h3 class="card-title">IRK Library</h3>
-                        <p class="card-text">A mobile app for a matrix calculator, cryptographic algorithms, Huffman encoding visualizer, and material resource management.</p>
+                    
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">2</div>
+                            <h3 class="project-title">IRK Library</h3>
+                        </div>
+                        <p class="project-description">
+                            A comprehensive mobile application featuring a matrix calculator, advanced cryptographic algorithms, interactive Huffman encoding visualizer, and efficient material resource management system.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Linear Algebra</span>
+                            <span class="tech-tag">Discrete Mathematics</span>
+                        </div>
                     </article>
-                    <article class="card">
-                        <h3 class="card-title">GCS</h3>
-                        <p class="card-text">A ground control station for drones.</p>
+                    
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">3</div>
+                            <h3 class="project-title">Ground Control Station</h3>
+                        </div>
+                        <p class="project-description">
+                            A sophisticated ground control station for drone operations, featuring real-time telemetry monitoring, flight path planning, and mission management capabilities with intuitive user interface.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Svelte</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">MAVLINK</span>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -77,11 +178,11 @@
 
         <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <div class="card">
-                    <p class="card-text">
-                        Contact me at: <a href="mailto:dev@nayaka.tech">dev@nayaka.tech</a>.
-                    </p>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-content">
+                    <div class="contact-card">
+                        <a href="mailto:dev@nayaka.tech" class="contact-email">dev@nayaka.tech</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -89,7 +190,9 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Z. Nayaka Athadiansyah. All rights reserved.</p>
+            <div class="footer-content">
+                <p>&copy; 2025 Z. Nayaka Athadiansyah.</p>
+            </div>
         </div>
     </footer>
 </body>
